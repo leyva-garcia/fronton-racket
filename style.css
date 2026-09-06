@@ -338,6 +338,10 @@ footer p {
 
 @media (max-width: 768px) {
 
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
         min-height: 160px;
     }
@@ -391,8 +395,145 @@ footer p {
     nav a {
         font-size: 12px;
     }
-}
 
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+
+        padding: 45px 6%;
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    /* PHOTO FIRST */
+
+    .hero-image {
+        width: 100%;
+        order: 1;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+    }
+
+    /* TEXT SECOND */
+
+    .hero-text {
+        width: 100%;
+        order: 2;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+
+    /* =========================
+       RACKETS
+    ========================= */
+
+    .rackets {
+        padding: 60px 6%;
+    }
+
+    .rackets h2 {
+        font-size: 32px;
+    }
+
+    .racket-container {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .racket-card {
+        width: 100%;
+    }
+
+    .racket-card img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+        display: flex;
+        flex-direction: column;
+
+        padding: 60px 6%;
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    /* PHOTO FIRST */
+
+    .about-image {
+        width: 100%;
+        order: 1;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+    }
+
+    /* TEXT SECOND */
+
+    .about-text {
+        width: 100%;
+        order: 2;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+        padding: 60px 6%;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+}
 
     
 
