@@ -1,0 +1,405 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f7f5f0;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #222;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d69b55;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+    padding: 70px 7%;
+
+    background-color: #e9e1d4;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 19px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    min-height: 350px;
+    background-color: #d0c8bb;
+    object-fit: cover;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #222;
+    color: white;
+
+    padding: 13px 25px;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+
+/* =========================
+   RACKETS
+========================= */
+
+.rackets {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.rackets h2,
+.about h2,
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    margin-bottom: 45px;
+    color: #666;
+}
+
+.racket-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.racket-card {
+    background-color: white;
+
+    width: 33%;
+
+    padding-bottom: 25px;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.racket-card img {
+    height: 430px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.racket-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.racket-card p {
+    padding: 0 20px;
+}
+
+.price {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 80px 7%;
+
+    background-color: #e9e1d4;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    min-height: 350px;
+    object-fit: cover;
+    background-color: #d0c8bb;
+}
+
+.about-text p {
+    margin: 20px 0;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    padding: 80px 7%;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #25D366;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-button:hover {
+    opacity: 0.85;
+}
+
+.whatsapp-button i {
+    font-size: 24px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #222;
+    color: #ccc;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 6%;
+    }
+
+    .hero-text h2 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    /* Rackets */
+
+    .racket-container {
+        flex-direction: column;
+    }
+
+    .racket-card {
+        width: 100%;
+    }
+
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+
+        padding: 60px 6%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+
+    /* Contact */
+
+    .contact {
+        padding: 60px 6%;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+}
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 28px;
+    text-decoration: none;
+    color: #333;
+    transition: 
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Instagram */
+
+.social-links a:nth-child(1):hover {
+    color: #E4405F;
+}
+
+/* Facebook */
+
+.social-links a:nth-child(2):hover {
+    color: #1877F2;
+}
+
+/* YouTube */
+
+.social-links a:nth-child(3):hover {
+    color: #FF0000;
+}
