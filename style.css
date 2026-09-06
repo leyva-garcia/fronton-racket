@@ -47,7 +47,7 @@ header {
 /* PHOTOS */
 
 .header-photo {
-    width: 25%;
+    width: 22%;
 
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@ header {
 /* CENTER */
 
 .header-content {
-    width: 50%;
+    width: 56%;
 
     display: flex;
     justify-content: space-between;
@@ -339,102 +339,59 @@ footer p {
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
+        min-height: 160px;
     }
 
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-    /* Hero */
-
-    .hero {
-        flex-direction: column;
-
-        text-align: center;
-
-        padding: 50px 6%;
-    }
-
-    .hero-text h2 {
-        font-size: 40px;
-    }
-
-    .hero-text p {
-        font-size: 17px;
-    }
-
-    .hero-image {
-        width: 100%;
-    }
-
-
-    /* Rackets */
-
-    .racket-container {
-        flex-direction: column;
-    }
-
-    .racket-card {
-        width: 100%;
-    }
-
-
-    /* About */
-
-    .about {
-        flex-direction: column;
-
-        padding: 60px 6%;
-    }
-
-    .about-text {
-        text-align: center;
-    }
-
-
-    /* Contact */
-
-    .contact {
-        padding: 60px 6%;
-    }
-
-    .contact h2 {
-        font-size: 30px;
-    }
-
-    header {
-        min-height: 150px;
-    }
+    /* Keep the photos, but make them narrow */
 
     .header-photo {
-        display: none;
+        display: block;
+        width: 18%;
+        min-width: 55px;
+
+        background-size: cover;
+        background-position: center;
     }
+
+    /* Center section */
 
     .header-content {
-        width: 100%;
+        width: 64%;
 
         flex-direction: column;
-        gap: 20px;
+        justify-content: center;
+        gap: 15px;
+
+        padding: 20px 8px;
 
         text-align: center;
-
-        padding: 25px 15px;
     }
+
+    /* Logo */
+
+    .logo h1 {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .logo p {
+        font-size: 10px;
+    }
+
+    /* Navigation */
 
     nav {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        gap: 8px;
     }
 
-
+    nav a {
+        font-size: 12px;
+    }
 }
-
 
 
     
