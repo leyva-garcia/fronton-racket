@@ -795,7 +795,7 @@ footer p {
         height: 27px;
 
         right: 1px;
-        bottom: 1px;
+        bottom: -5px;
     }
 
     .whatsapp-icon i {
