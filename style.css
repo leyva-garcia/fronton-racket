@@ -580,3 +580,248 @@ footer p {
 .social-links a:nth-child(3):hover {
     color: #FF0000;
 }
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 9999;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    /* Initial state */
+    opacity: 0;
+    transform: translateY(80px) scale(0.5);
+
+    /* Pop-up animation */
+    animation: whatsappPop 0.8s ease-out forwards;
+}
+
+
+/* =========================
+   RACKET / LOGO
+========================= */
+
+.whatsapp-racket {
+    position: relative;
+
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d5a066,
+            #9a6337
+        );
+
+    border: 3px solid #6d4326;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================
+   FRONTON LOGO
+========================= */
+
+.whatsapp-racket img {
+    width: 82%;
+    height: 82%;
+
+    object-fit: contain;
+
+    /*
+       Makes the white background
+       visually blend with the wood
+    */
+
+    mix-blend-mode: multiply;
+}
+
+
+/* =========================
+   WHATSAPP ICON
+========================= */
+
+.whatsapp-icon {
+    position: absolute;
+
+    
+    bottom: -8px;
+    
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background-color: #25D366;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid white;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.whatsapp-icon i {
+    font-size: 19px;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.whatsapp-message {
+    background-color: #222;
+
+    color: white;
+
+    padding: 9px 14px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    transform: translateX(10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.floating-whatsapp:hover .whatsapp-racket {
+    transform: scale(1.08) rotate(-4deg);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.floating-whatsapp:hover .whatsapp-message {
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* =========================
+   POP-UP ANIMATION
+========================= */
+
+@keyframes whatsappPop {
+
+    0% {
+        opacity: 0;
+        transform: translateY(80px) scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.08);
+    }
+
+    80% {
+        transform: translateY(4px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .floating-whatsapp {
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .whatsapp-racket {
+        width: 68px;
+        height: 68px;
+    }
+
+    .whatsapp-icon {
+        width: 27px;
+        height: 27px;
+
+        right: 1px;
+        bottom: 1px;
+    }
+
+    .whatsapp-icon i {
+        font-size: 16px;
+    }
+
+    /* Hide text on mobile */
+
+    .whatsapp-message {
+        display: none;
+    }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .floating-whatsapp {
+        animation: none;
+
+        opacity: 1;
+        transform: none;
+    }
+
+}
