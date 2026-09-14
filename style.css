@@ -808,6 +808,16 @@ footer p {
         display: none;
     }
 
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+        margin: 25px 0;
+    }
+
+    .contact-item {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -824,4 +834,71 @@ footer p {
         transform: none;
     }
 
+}
+
+/* =========================
+   EMAIL BUTTON
+========================= */
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #222;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    margin-left: 10px;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.email-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.email-button i {
+    font-size: 20px;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 25px 0 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.contact-item i {
+    font-size: 19px;
+}
+
+.contact-item:hover {
+    color: #25D366;
 }
