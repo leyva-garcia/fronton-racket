@@ -626,6 +626,10 @@ footer p {
 
     overflow: hidden;
 
+     /* Confines mix-blend-mode below to this circle only,
+       instead of blending with page content behind it on mobile */
+    isolation: isolate;
+
     background:
         linear-gradient(
             135deg,
