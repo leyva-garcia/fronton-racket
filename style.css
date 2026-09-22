@@ -278,6 +278,60 @@ nav a:hover {
     margin: 20px 0;
 }
 
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    padding: 80px 7%;
+    text-align: center;
+    background-color: #f7f5f0;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: white;
+    width: 50%;
+    padding: 35px 25px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+.quote-icon {
+    font-size: 22px;
+    color: #d69b55;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.testimonial-role {
+    font-size: 13px;
+    color: #666;
+}
+
+
+
 
 /* =========================
    CONTACT
@@ -514,6 +568,18 @@ footer p {
 
     .about h2 {
         font-size: 32px;
+    }
+
+    .testimonials {
+        padding: 60px 6%;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 100%;
     }
 
 
